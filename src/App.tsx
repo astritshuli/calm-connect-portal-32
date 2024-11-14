@@ -12,6 +12,7 @@ import Messaging from "./pages/Messaging";
 import Payment from "./pages/Payment";
 import NurseDashboard from "./pages/NurseDashboard";
 import Reviews from "./pages/Reviews";
+import Settings from "./pages/Settings";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/payment" element={<Payment />} />
           <Route path="/nurse-dashboard" element={<NurseDashboard />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/settings" element={<Settings />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
