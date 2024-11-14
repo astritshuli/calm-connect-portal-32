@@ -8,6 +8,10 @@ import Home from "./pages/Home";
 import NurseProfile from "./pages/NurseProfile";
 import BookingSchedule from "./pages/BookingSchedule";
 import BookingConfirmation from "./pages/BookingConfirmation";
+import Messaging from "./pages/Messaging";
+import Payment from "./pages/Payment";
+import NurseDashboard from "./pages/NurseDashboard";
+import Reviews from "./pages/Reviews";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +27,10 @@ const App = () => (
           <Route path="/nurse-profile" element={<NurseProfile />} />
           <Route path="/booking-schedule" element={<BookingSchedule />} />
           <Route path="/booking-confirmation" element={<BookingConfirmation />} />
+          <Route path="/messaging" element={<Messaging />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="/nurse-dashboard" element={<NurseDashboard />} />
+          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
